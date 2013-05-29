@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+<style>
+
+#top-circle {
+	width: 177px;
+	height: 177px;
+	-webkit-border-radius: 88px 89px 89px 88px/89px 89px 88px 88px;
+	-moz-border-radius: 88px 89px 89px 88px/89px 89px 88px 88px;
+	border-radius: 88px 89px 89px 88px/89px 89px 88px 88px;
+	background-color: #ec5e59;
+	border: solid 1px #fdffef;
+	float: right;  margin-right:45px;}
+
+	#left-circle {
+	width: 176px;
+	height: 177px;
+	-webkit-border-radius: 88px/88px 88px 89px 89px;
+	-moz-border-radius: 88px/88px 88px 89px 89px;
+	border-radius: 88px/88px 88px 89px 89px;
+	background-color: #e9af9a;
+	border: solid 1px #fdffef;
+	float:left;
+	margin-top: -100px;
+	
+}
+
+#right-circle {
+	width: 177px;
+	height: 177px;
+	-webkit-border-radius: 88px 89px 89px 88px/88px 88px 89px 89px;
+	-moz-border-radius: 88px 89px 89px 88px/88px 88px 89px 89px;
+	border-radius: 88px 89px 89px 88px/88px 88px 89px 89px;
+	background-color: #e38786;
+	border: solid 1px #fff; float:right; margin-top:-180px; 
+}
+
+.diagram-wrapper {
+	width: 260px;
+	height: 260px; position: fixed; overflow: hidden;
+}
+
+.diagram-wrapper > div { opacity: .4; overflow: auto; }
+.diagram-wrapper > div:hover { opacity: .6;  -moz-transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);}
+.diagram-wrapper > div > p { opacity: .6; font-size: 16px;
+	color: #fff; float:left; margin: 30px 0 0 30px;}
+
+
+</style>
+
+
+</head>
+<div class="diagram-wrapper">
+<div id="top-circle"><p>Intelligence</p></div>
+<div id="left-circle"><p>Intelligence</p></div>
+<div id="right-circle"><p>Intelligence</p></div>
+</div>
+
+</html>
