@@ -8,6 +8,9 @@
 <script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
 <script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
 <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+<script src="scripts/jquery.quovolver.js"></script>
+<script type="text/javascript" src="//use.typekit.net/hqm1foo.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <script type="text/javascript">
 $(document).ready(function(){
 	$('#nav').localScroll(800);
@@ -24,6 +27,29 @@ $(document).ready(function(){
 
 })
 </script>
+
+<script>
+    $(document).ready(function() {
+        
+        // Example One
+        $('.quotes').quovolver();
+        
+        // Example Two
+        $('#demo-two .quotes').quovolver({
+            children        : 'li',
+            transitionSpeed : 800,
+            autoPlay        : false,
+            equalHeight     : false,
+            navPosition     : 'above',
+            navPrev         : true,
+            navNext         : true,
+            navNum          : true,
+            navText         : true,
+            navTextContent  : 'Quote @a of @b'
+        });
+        
+    });
+    </script>
 </head>
 
 <body>
@@ -35,18 +61,18 @@ $(document).ready(function(){
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-	<div id="logo"><img src="images/logo.png"></div>
+	
 	<ul id="nav">
-		<li><a href="#intro" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	    <li><a href="#second" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	    <li><a href="#third" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	    <li><a href="#fifth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+		<li><a href="#intro" title="Next Section"><div id="logo"><img src="images/logo.png"></div></a></li>
+	    <li><a href="#second" title="Next Section">About Us</a></li>
+	    <li><a href="#third" title="Next Section">Testimonials</li>
+	    <li><a href="#fifth" title="Next Section">Sign Up</a></li>
 	</ul>
 	
 	<div id="intro">
 		<div class="story">
-			<div class="firstheart"></div>
-			<div class="bg"></div>
+
+			<div class="bg"><h1>Bay Area Nerd Girls (BANG) is a meetup for<span> GEEKY, DORKY, NERDY </span> girls, ladies, chicas.</h1> </div>
 	    	<div class="float-left">
 			
 	        </div>
@@ -56,11 +82,11 @@ $(document).ready(function(){
 	<div id="second">
 		<div class="story">
 	    	<div class="float-right">
-	            <h2>ABOUT</h2>
-	            <p>Bay Area Nerd Girls (BANG) is an interest-based meetup, members should be interested in any of the following: <span>  Sci-Fi, Anime/Manga, Comics, Cartoons, Academics, Design, RPG, Boardgames, Cosplay, and the list goes on. </span>Whether you're a geek, nerd, or dork; it does not matter- every girl is welcome so long as she's open to meeting all types of friends.</p>
-	            <p>BANG is open only to those who identify as a woman. We are emphatically trans- and queer-friendly. Must be 18+.</p>
+	            <h2>What is this BANG thing?</h2>
+	            <p><strong>Bay Area Nerd Girls (BANG) is an interest-based meetup. Members should be interested in any of the following: <span>Sci-Fi, Anime/Manga, Comics, Cartoons, Academics, Design, RPG, Boardgames, Cosplay, and the list goes on.</span></strong> Whether you consider yourself a geek, nerd, or dork, it doesn’t matter — every girl is welcome so long as she’s open to meeting all types of friends. We’re a friendly and open group who loves to gather for adventures like movies, museums, tea parties, cosplay festivals, kite-flying, trampoline park, you name it.</p>
+	            <p><em>BANG is only open to those who identify as a woman. We are emphatically trans- and queer-friendly. If this sounds like you, we’d love to meet you. Must be 18+.</em></p>
 	            <img src="images/graph.png" style="float:left;">
-	            <img src="images/list.png" style="float:left;">
+	            
 	        </div>
 
 	        <div class=""></div>
@@ -73,8 +99,43 @@ $(document).ready(function(){
 			
 	    	<div class="float-left" style="padding-top:0; margin-top:0; margin-left:175px; position:relative;">
 
-	        	<h2>When are the meetups?</h2>
-	            <iframe src="https://www.google.com/calendar/embed?src=1fidpgk90qpsj19ssh9ifka9v4%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="700" height="600" frameborder="0" scrolling="no"></iframe>
+	            
+                        <div class="quotes">
+							 <blockquote>
+                                <p>&ldquo;I immediately felt welcomed by the group and the girls were awesome! &rdquo;</p>
+                                <p>&mdash;<em>Nina, BANG member</em></p>
+                            </blockquote>
+
+                            <blockquote>
+                                <p>&ldquo;Nerdastic, very friendly&rdquo;</p>
+                                <p>&mdash;<em>Brittney, BANG member</em></p>
+                            </blockquote>
+
+                            <blockquote>
+                                <p>&ldquo;I love this meetup! :D&rdquo;</p>
+                                <p>&mdash;<em>Becca, BANG member</em></p>
+                            </blockquote>
+
+                            <blockquote>
+                                <p>&ldquo;This group is the best I've been to yet! I can't wait for the next meetup! &rdquo;</p>
+                                <p>&mdash;<em> Nicole, BANG member</em></p>
+                            </blockquote>
+
+                            <blockquote>
+                                <p>&ldquo;Super fun!&rdquo;</p>
+                                <p>&mdash; <em>Stacy, BANG member</em></p>
+                            </blockquote>
+
+                            <blockquote>
+                            <p>&ldquo;Welcoming, intelligent, awesome.&rdquo;</p>
+                            <p>&mdash; <em>AJ, BANG member</em></p>
+                            </blockquote>
+
+                            <blockquote>
+                                <p>&ldquo;Great group of girls... I feel like I get along with almost everyone I've met, which is rare for me in large groups! &rdquo;</p>
+                                <p>&mdash;<em> Lindsay, BANG member</em></p>
+                            </blockquote>
+                        </div><!-- .quotes -->
 	        </div>
 	    </div> <!--.story-->
 	</div> <!--#third-->
@@ -86,23 +147,22 @@ $(document).ready(function(){
 				
 		    
 		    <section>
-                <div id="container_buttons">
-                	<h2>Join us today!</h2>
-                    <p>
-                        <a href="http://www.bayareanerdgirls.com" target="_blank" class="a_demo_one">
-                            Meetup
-                        </a>
+               
+                	<h2>Hi? Can we be bestfriends? This group sounds amazing.</h2>
+                    <p class="signup-info">
+                    	<em><span>Yes, we can definitely be BFF's.</span></em> But first you have to join to come to a meetup! Due to solicators and boys joining (sorry bros), the group is now private. No worries, as long as you're a real girl, you won't have to worry about being approved for membership. 
+                       
                     </p>
-                    <p> or </p>
-                    <p>
-                        <a target="_blank" href="https://www.facebook.com/groups/bayareanerdgirls/" class="a_demo_one">
-                            Facebook
-                        </a>
-                    </p>
-                </div>
+                   
+                 
 			</section>
-		    <div class="fb-like-box" data-href="https://www.facebook.com/Bay.Area.Nerd.Girls" data-width="292" data-show-faces="false" data-stream="false" data-header="true"></div>
+			  <a href="http://www.bayareanerdgirls.com" target="_blank" class="btn">
+                            Join Now
+               </a>
+		    <div class="fb-like-box" data-href="https://www.facebook.com/Bay.Area.Nerd.Girls" data-width="292" data-show-faces="false" data-stream="false" data-header="true" style="float:right"></div>
+
 		    </div>
+
 	    </div> <!--.story-->
 	</div> <!--#fifth-->
 </body>
