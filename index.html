@@ -19,6 +19,21 @@
 <script type="text/javascript" src="//use.typekit.net/hqm1foo.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
+<style type="text/css">
+	@media (max-device-width: 479px), screen and (max-width: 479px){
+
+html, body{background:url('images/pattern.jpg') repeat;}
+
+
+
+#nav{display:none;}
+.mobile-logo {display:block;}
+#intro{background-size:contain;}
+#second {background:none; }
+ }
+
+</style>
+
 <script type="text/javascript">
 $(document).ready(function(){
 	$('#nav').localScroll(800);
@@ -40,20 +55,6 @@ $(document).ready(function(){
         
         // Example One
         $('.quotes').quovolver();
-        
-        // Example Two
-        $('#demo-two .quotes').quovolver({
-            children        : 'li',
-            transitionSpeed : 800,
-            autoPlay        : false,
-            equalHeight     : false,
-            navPosition     : 'above',
-            navPrev         : true,
-            navNext         : true,
-            navNum          : true,
-            navText         : true,
-            navTextContent  : 'Quote @a of @b'
-        });
         
     });
     </script>
@@ -81,8 +82,10 @@ $(document).ready(function(){
 	
 	<div id="intro">
 		<div class="story">
+			
 
 			<div class="float-right">
+				<div class="mobile-logo"><img src="images/logo.png"></div>
 				<h1>Bay Area Nerd Girls (BANG) is a meetup for<span> GEEKY, DORKY, & NERDY </span> girls to meet like-minded ladyfriends.</h1> </div>
 	    	<div class="float-left">
 			
