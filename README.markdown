@@ -1,5 +1,5 @@
 Bay Area Nerd Girls Parallax
 ===============
-Parallax informational site for meetup group Bay Area Girls <a href="http://whatisbang.com">here</a>
+Parallax informational site for meetup group <a href="http://whatisbang.com">Bay Area Nerd Girls</a>
 
-Promotional piece for http://www.bayareanerdgirls.com
+View here: http://whatisbang.com
